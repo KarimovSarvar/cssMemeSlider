@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    position: relative;
+}
+
 .main__wrapper {
     height: 100vh;
     width: 100%;
@@ -12,18 +16,27 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: relative;
 }
 
 .slider {
     max-width: 1200px;
+    position: relative;
     overflow: hidden;
     height: auto;
+    display: flex;
+    flex-direction: column
 }
 
 .slider__line {
     width: 400%;
     height: 100%;
     display: flex;
+}
+
+.slider__line input {
+    position: absolute;
+    visibility: hidden;
 }
 
 .slider__line .slider__item {
@@ -33,4 +46,44 @@
 .slider__line .slider__item img {
     max-width: 100%;
     height: auto;
+}
+
+.slider-dot {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.slider__dots {
+    position: absolute;
+    z-index: 100;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#s1:checked ~ .s1 {
+    margin-left: 0;
+}
+
+#s2:checked ~ .s1 {
+    margin-left: -25%;
+}
+
+#s1:checked ~ .s1 {
+    margin-left: 0;
+}
+
+#s2:checked ~ .s1 {
+    margin-left: -25%;
+}
+
+#s3:checked ~ .s1 {
+    margin-left: -50%;
+}
+
+#s4:checked ~ .s1 {
+    margin-left: -75%;
 }
