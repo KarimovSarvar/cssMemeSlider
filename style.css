@@ -35,7 +35,12 @@ body {
 }
 
 .slider__line input {
-    position: absolute;
+    display: none;
+    visibility: hidden;
+}
+
+.slider__dots input {
+    display: none;
     visibility: hidden;
 }
 
@@ -52,13 +57,21 @@ body {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-color: black;
+    background-color: rgb(55, 154, 230);
+    margin: 0 5px;
+}
+
+.slider-dot:hover {
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.slider-dot:active {
+    background-color: #353535;
+    border: 3px solid rgb(55, 154, 230);
 }
 
 .slider__dots {
-    position: absolute;
-    z-index: 100;
-    bottom: 20px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -68,17 +81,11 @@ body {
     margin-left: 0;
 }
 
-#s2:checked ~ .s1 {
-    margin-left: -25%;
-}
-
-#s1:checked ~ .s1 {
-    margin-left: 0;
-}
 
 #s2:checked ~ .s1 {
     margin-left: -25%;
 }
+
 
 #s3:checked ~ .s1 {
     margin-left: -50%;
