@@ -7,44 +7,35 @@
     <title>cssMemeSlider</title>
 </head>
 <body>
-    <main>
-        <div class="main__wrapper">
-            <div class="slider">
-                
-                <div class="slider__line">
-                    <input type="radio" name="s" id="s1">
-                    <input type="radio" name="s" id="s2">
-                    <input type="radio" name="s" id="s3">
-                    <input type="radio" name="s" id="s4">
-                    <div class="slider__item s1">
-                        <img src="assets/img1.jpg" alt="mem" />
-                    </div>
-                    <div class="slider__item">
-                        <img src="assets/img2.jpg" alt="mem" />
-                    </div>
-                    <div class="slider__item">
-                        <img src="assets/img3.jpg" alt="mem" />
-                    </div>
-                    <div class="slider__item">
-                        <img src="assets/img4.jpg" alt="mem" />
-                    </div>
+    <div class="slider">
+        <input type="radio" class="r" name="slider" id="slide1" checked>      
+        <input type="radio" class="r" name="slider" id="slide2">
+        <input type="radio" class="r" name="slider" id="slide3">
+        <input type="radio" class="r" name="slider" id="slide4">
+
+        <div class="slides">	
+            <img class="slider-image" src="assets/img1.jpg" alt="slider photo">
+            <img class="slider-image" src="assets/img2.jpg" alt="slider photo">
+            <img class="slider-image" src="assets/img3.jpg" alt="slider photo">
+            <img class="slider-image" src="assets/img4.jpg" alt="slider photo">
+        </div>
+
+        <div class="slide__content">
+            <div class="text-slider">
+                <div class="text-container">
+                    <p class="subtitle">СЛАЙДЕР</p>
+                    <p class="subtitle">НА ЧИСТОМ CSS</p>
+                    <p class="subtitle">НАСТОЯЩАЯ</p>
+                    <p class="subtitle">БОЛЬ</p>
                 </div>
             </div>
-            <div class="slider__control">
-                <div class="slider__text">
-                    <p class="text t1"></p>
-                    <p class="text t2"></p>
-                    <p class="text t3"></p>
-                    <p class="text t4"></p>
-                </div>
-                <div class="slider__dots">
-                    <label for="s1" class="slider-dot d1"></label>
-                    <label for="s2" class="slider-dot d2"></label>
-                    <label for="s3" class="slider-dot d3"></label>
-                    <label for="s4" class="slider-dot d4"></label>
-                 </div>
+            <div class="slide__pointers">
+                <label for="slide1"><div class="slide__pointers-item"></div></label>
+                <label for="slide2"><div class="slide__pointers-item"></div></label>
+                <label for="slide3"><div class="slide__pointers-item"></div></label>
+                <label for="slide4"><div class="slide__pointers-item"></div></label>
             </div>
         </div>
-    </main>
-</body>
+    </div>
+  </body>
 </html>
